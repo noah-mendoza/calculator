@@ -11,6 +11,7 @@ let next = ""
 let firstTime = true;
 let arr = []
 let isNumNew = false
+let decimaled = ""
 
 clear.addEventListener('click', () => {
     display.textContent = "0"
@@ -60,22 +61,26 @@ buttonOperator.forEach((divs) => {
         isNumNew) {
             if (operator === "plus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) + parseFloat(next))
+                decimaled = (parseFloat(first) + parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "minus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) - parseFloat(next))
+                decimaled = (parseFloat(first) - parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "divide") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) / parseFloat(next))
+                decimaled = (parseFloat(first) / parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "multiply") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) * parseFloat(next))
+                decimaled = (parseFloat(first) * parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             operator = "plus"
@@ -84,22 +89,26 @@ buttonOperator.forEach((divs) => {
         isNumNew) {
             if (operator === "plus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) + parseFloat(next))
+                decimaled = (parseFloat(first) + parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "minus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) - parseFloat(next))
+                decimaled = (parseFloat(first) - parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "divide") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) / parseFloat(next))
+                decimaled = (parseFloat(first) / parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "multiply") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) * parseFloat(next))
+                decimaled = (parseFloat(first) * parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             operator = "minus"
@@ -108,22 +117,26 @@ buttonOperator.forEach((divs) => {
         isNumNew) {
             if (operator === "plus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) + parseFloat(next))
+                decimaled = (parseFloat(first) + parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "minus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) - parseFloat(next))
+                decimaled = (parseFloat(first) - parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "divide") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) / parseFloat(next))
+                decimaled = (parseFloat(first) / parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "multiply") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) * parseFloat(next))
+                decimaled = (parseFloat(first) * parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             operator = "divide"
@@ -132,22 +145,26 @@ buttonOperator.forEach((divs) => {
         isNumNew) {
             if (operator === "plus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) + parseFloat(next))
+                decimaled = (parseFloat(first) + parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "minus") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) - parseFloat(next))
+                decimaled = (parseFloat(first) - parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "divide") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) / parseFloat(next))
+                decimaled = (parseFloat(first) / parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "multiply") {
                 next = display.textContent
-                display.textContent = (parseFloat(first) * parseFloat(next))
+                decimaled = (parseFloat(first) * parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             operator = "multiply"
@@ -155,22 +172,26 @@ buttonOperator.forEach((divs) => {
         else if (divs.textContent === "=" & isNumNew) {
             if (operator === "plus") {
                 next = display.textContent;
-                display.textContent = (parseFloat(first) + parseFloat(next))
+                decimaled = (parseFloat(first) + parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "minus") {
                 next = display.textContent;
-                display.textContent = (parseFloat(first) - parseFloat(next))
+                decimaled = (parseFloat(first) - parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "divide") {
                 next = display.textContent;
-                display.textContent = (parseFloat(first) / parseFloat(next))
+                decimaled = (parseFloat(first) / parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             else if (operator === "multiply") {
                 next = display.textContent;
-                display.textContent = (parseFloat(first) * parseFloat(next))
+                decimaled = (parseFloat(first) * parseFloat(next))
+                display.textContent = decimaled.toFixed(3)
                 first = display.textContent
             }
             firstTime = true;
