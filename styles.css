@@ -1,0 +1,89 @@
+.body {
+    width: 400px;
+    height: 650px;
+    background-color: grey;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.n:hover {
+    border: solid;
+}
+
+.o:hover {
+    border: solid white;
+}
+
+.clear:hover {
+    border: solid;
+}
+
+.clear {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(158, 155, 155);
+    position: absolute;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: solid transparent;
+    box-sizing: border-box;
+    font-size: 40px;
+}
+
+.numbers {
+    width: 310px;
+    height: 550px;
+    background-color:rgb(90, 78, 81);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; 
+    gap: 20px;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.n {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(158, 155, 155);
+    text-align: center;
+    line-height: 80px;
+    border: solid transparent;
+    box-sizing: border-box;
+    font-size: 40px;
+}
+
+.operators {
+    width: 90px;
+    height: 550px;
+    background-color: black;
+    float: right;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.o {
+    line-height: 85px;
+    width: 70px;
+    height: 90px;
+    background-color: rgb(59, 46, 46);
+    text-align: center;
+    border: solid transparent;
+    box-sizing: border-box;
+    font-size: 40px;
+}
+
+.display {
+    text-align: right;
+    line-height: 100px;
+    box-sizing: border-box;
+    height: 100px;
+    width: 400px;
+    font-size: 40px;
+}
